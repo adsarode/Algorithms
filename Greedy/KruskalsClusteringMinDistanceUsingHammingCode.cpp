@@ -3,6 +3,8 @@
 	possible weight that connects any two tress in the forest
 	
 	This implementation uses Union Find (24 hard coded bits)
+	Note, this implementation requires setting 64 bit configuration.
+	At peak it consumes around 6GB of ram and run for around hanf and hour
 	
 	https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
 	
