@@ -2,7 +2,7 @@
 	Merge sort algorithm
 	Counts and outputs the number of inversions
 	
-	https://en.wikipedia.org/wiki/Karatsuba_algorithm
+	https://en.wikipedia.org/wiki/Karger%27s_algorithm
 	
 	Ashish Sarode 27 July 2018
 */
