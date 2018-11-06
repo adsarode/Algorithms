@@ -1,3 +1,11 @@
+/*
+	Prints huffman codes.
+	
+	https://en.wikipedia.org/wiki/Huffman_coding
+	
+	Ashish Sarode 12 August 2018
+*/
+
 #include <algorithm>
 #include <iostream>
 #include <string>
@@ -41,7 +49,7 @@ public:
 void ReadSymbolWeights(vector<int>& weights)
 {
 	string line;
-	ifstream fHandle("C:\\D1\\MOOCs\\Coursera\\AlgorithmsStanford\\03GreedyMSTDynPro\\huffman.txt");
+	ifstream fHandle("C:\\huffman.txt");
 
 	getline(fHandle, line);
 	stringstream strLine(line);
@@ -129,7 +137,7 @@ int main()
 	unsigned minLength = 9999999;
 	unsigned maxLength = 0;
 
-	ofstream fHandle("C:\\D1\\MOOCs\\Coursera\\AlgorithmsStanford\\03GreedyMSTDynPro\\huffmanCodes.txt");
+	ofstream fHandle("C:\\huffmanCodes.txt");
 	for(auto code : huffmanCodes)
 	{
 		unsigned len = code.second.length();
