@@ -18,7 +18,8 @@ def AStarSearch(problem):
                 if next not in visited:
                     nextPath = path + [dirn]
                     nextCost = pathCost + cost
-                    frontierStack.push((nextCost, next, nextPath), nextCost)
+                    priority = nextCost + heuristic(next, problem)
+                    frontierStack.push((nextCost, next, nextPath), priority)
 
         if frontierStack.isEmpty():
            print('Faied to find path')
