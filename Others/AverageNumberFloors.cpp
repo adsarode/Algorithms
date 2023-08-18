@@ -1,3 +1,22 @@
+/*
+A building has 100 floors.
+
+An egg can be dropped from any floor.
+
+One of the floors is the highest floor an egg can be dropped from without breaking. If an egg is dropped from above that floor, it will break.
+
+If it is dropped from that floor or below, it will be completely undamaged and you can drop the egg again.
+
+Given two eggs, find the highest floor an egg can be dropped from without breaking, with as few drops as possible.
+
+Two solutions =>
+1. Try floors 10,20.. 100 first and then required intervals
+2. Try floors 14,27.. 100 first and then required intervals (interval 13,12,11..)
+
+This code finds average number of attempts 
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
